@@ -34,7 +34,7 @@ $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
 $endif$
-\usepackage{amssymb,amsmath}
+%\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -55,6 +55,17 @@ $endif$
 $for(fontfamilies)$
   \newfontfamily{$fontfamilies.name$}[$fontfamilies.options$]{$fontfamilies.font$}
 $endfor$
+\usepackage{mathtools}
+\usepackage{txfonts}
+\usepackage{siunitx}
+%\usepackage{mathspec}
+\usepackage{multicol}
+\usepackage{underscore}
+\usepackage{cases}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{listings}
 \setmainfont[ItalicFont={Source Code Pro}]{IPAexMincho}
 \setsansfont{IPAexGothic}
 \XeTeXlinebreaklocale "ja"
